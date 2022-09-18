@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="'en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible content= IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./graphic/Home/avatar.webp" type="image/x-icon">
+    <title>My Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <!-- making humbuger nav bar depending on  the viewport  -->
+    <section class="top-nav fixed-top">
+        <div>
+            <img src="./graphic/Home/avatar.webp" alt="Avatar" class="avatar">
+        </div>
+        <p>THAMU DAYA WIN</p>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li> <a class="active" href="CA2.index.html" class="text-light"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="Aboutme.html" class="text-light"><i class="fas fa-theater-masks"></i>About me</a></li>
+            <li><a href="beforepoly.html" class="text-light"><i class="fas fa-lightbulb"></i>Before Poly</a>
+            </li>
+            <li> <a href="lifeatpoly.html" class="text-light"><i class="fas fa-user-graduate"></i>Life at Poly</a>
+            </li>
+            <li> <a href="futcareer.html" class="text-light"><i class="fas fa-database"></i>My future </a></li>
+            <li><a href="feedback.html" class="text-light"><i class="far fa-edit"></i>Feedback</a></li>
+            <li> <input type="search" placeholder="Search.." id="linkit">
+                <a href="" id="hp" button type="submit" onclick="searchit()"><i class="fa fa-search"></i></a>
+                <div class="continer">
+                    <script type="text/javascript">
+                        function searchit() {
+                            document.getElementById("hp").href = (("https://www.google.com/search?q=") + (document.getElementById("linkit").value));
+                        }
+                    </script>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Introducing to my webpage using jumbotron to adjust the title looks -->
+    <div class="jumbotron text-center custom-background p-5">
+        <h1 class=" display-1 bg secondary text-light p-4">My CAREER PROSPECT</h1>
+        <h2 class=" text-light">Welcome to my personal webpage!</h2>
+        <br>
+        <a href="Aboutme.html">
+            <img src="./graphic/Home/mypic1.jpg" alt="My photo" style="height:300px; width:250px;border-radius: 80%;"
+                class="center img-rounded">
+        </a>
+
+        <br>
+        <br>
+
+        <!-- Linking to my sociaal media acccount and adjust the position by using grid  -->
+        <div class="row">
+            <div class="col">
+                <a href="https://www.instagram.com/kharimeliaam/">
+                    <img src="./graphic/Home/Instagram-Logo.wine.png" alt="instagram" style="height:90px;width:140px;">
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="https://www.facebook.com/thamudaya.win.3">
+                    <img src="./graphic/Home/Facebook-logo.png" alt="Facebook-logo" style="height:70px;width:120px;">
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://discord.gg/PNshHnB6">
+                    <img src="./graphic/Home/dc.png" alt="discord" style="height:50px;width:60px;">
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Making Calendar by using html & CSS describes together with my favorite article -->
+    <div class="container">
+        <h1 class="text-center text-light"
+            style="background:linear-gradient(to right,rgb(124, 63, 142) ,rgb(54, 2, 54),rgb(147, 89, 147));">My
+            Favorite Article</h1>
+        <div class="row">
+            <div class="col">
+                <h2 style="background:linear-gradient(to right,rgb(124, 63, 142) ,rgb(54, 2, 54),rgb(147, 89, 147));"
+                    class="text-light">What is the Importance of Time in Human Life?</h2>
+                <p
+                    style="background-color:rgb(234, 227, 150);; width:auto;  border:2px solid  rgb(137, 72, 137);border-radius: 15px;">
+                    Time is the continuous sequence of events that take place in an apparently irreversible succession
+                    from
+                    the past, through the present, to the future.<br><br>
+
+                    A person lives in this world within a time that is expressed in the same matter, for ten years ago
+                    you
+                    were not the same as you are today, neither in your appearance, nor in your knowledge, nor in your
+                    experiences, everything around you changes with the passage of time.<br><br>
+
+                    Time is related to all that is going on around us, so we often hear about the time dimension,
+                    because
+                    time is an essential element of life. Time represents special milestones, including birthdays,
+                    anniversaries and the birth of babies and helps us organize our daily lives and activities, so we
+                    can
+                    live a more organized and productive life.<br><br>
+
+                    Based on what we have mentioned about the importance of time in our life, it is the duty of the
+                    rational
+                    person to preserve the time that is in his hands and not to waste these times without proper
+                    exploitation and benefit us. So we must learn to manage time because of its importance.
+                </p>
+            </div>
+            <!-- Calender -->
+            <div class="col">
+                <div class="month">
+                    <ul>
+                        <li class="prev">&#10094;</li>
+                        <li class="next">&#10095;</li>
+                        <li>
+                            August<br>
+                            <span style="font-size:18px">2022</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="weekdays">
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thur</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                    <li>Sun</li>
+                </ul>
+
+                <ul class="days">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li><span class="active">7</span></li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+</body>

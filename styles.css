@@ -1,0 +1,439 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding:10px;
+  background-color: whitesmoke;
+
+}
+
+.container2 {
+  width: 100%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding: 50px;
+  background-color: linear-gradient(to right,rgb(124, 63, 142) ,rgb(54, 2, 54),rgb(147, 89, 147)) ;
+}
+
+/* applying background and border to heading */
+h3,
+h4 {
+  text-align: center;
+  background-color: rgb(225, 132, 225);
+  width: auto;
+  border-radius: 20px;
+  border: 2px solid rgb(137, 72, 137);
+}
+
+/* removing the underline from link  */
+a {
+  text-decoration: none;
+}
+
+
+/* adjusting the size and shape of icon */
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 70%
+}
+
+/* applying background color  */
+body {
+  background-color: whitesmoke;
+  margin-top: 50px;
+}
+
+/* apply fixed background image to main page */
+.custom-background {
+  color: rgb(0, 0, 0);
+  background-image: url('./graphic/Home/hcover.webp');
+  background-size: cover;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+/* footer  */
+footer {
+  text-align: center;
+  background-color: rgb(124, 63, 142);
+  padding: 80px;
+  margin-top: 100px;
+}
+
+/* adjusting the font size */
+.font {
+  font-size: 90%;
+}
+
+/* putting shadow and border to the images  */
+.img-rounded {
+  border-radius: 40px;
+  border-left: 1px solid rgb(137, 72, 137);
+  border-bottom: 1px solid rgb(137, 72, 137);
+  box-shadow: rgb(112, 57, 112) 15px 0px 25px,
+    rgb(82, 75, 82) 15px 0px 25px;
+}
+
+/* styling the article  */
+p.p {
+  margin-top: 30px;
+  border: 2px solid rgb(137, 72, 137);
+  padding: 30px;
+  width: 300px;
+  height: 200px;
+  background-color: violet;
+}
+
+
+/* flipping images */
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: rgb(206, 141, 206);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* applying color to the paragraph */
+.passage {
+  float: left;
+  margin-top: 40px;
+  border: 2px solid rgb(137, 72, 137);
+  border-radius: 10px;
+  background-color: rgb(234, 227, 150);
+}
+
+.passage1 {
+  float: left;
+  margin-top: 90px;
+  border: 2px solid rgb(137, 72, 137);
+  border-radius: 10px;
+  background-color: rgb(234, 227, 150);
+  width: 300px;
+}
+
+/* thumbnail */
+img.image {
+  border: 1px solid rgb(200, 132, 197);
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img.image:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+/* adjustc the table size and applying the color to it */
+table {
+  background-color: rgb(124, 76, 139);
+  height: 300px;
+  color: white;
+}
+
+/* adjustin font zize of nav bar and headings  */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+/* activating humburger menu nav bar */
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right,rgb(124, 63, 142) ,rgb(54, 2, 54),rgb(147, 89, 147));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+}
+
+.top-nav a:hover {
+  background-color: rgb(135, 130, 130);
+
+}
+
+.top-nav a.active {
+  color: rgb(232, 168, 213);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu>li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+  background: white;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle~.menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-toggle:checked~.menu li {
+    border: 1px solid white;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu>li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color:rgb(124, 63, 142) ;
+  }
+
+  .menu>li:not(:last-child) {
+    border-bottom: 1px solid rgb(112, 54, 121);
+  }
+}
+
+/* calendar */
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background:rgb(112, 54, 121) ;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: rgb(124, 63, 142);
+  color: white !important
+}
+
+
+div.stars {
+  width: 270px;
+  display: inline-block;
+}
+ 
+input.star { display: none; }
+ 
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: #444;
+  transition: all .2s;
+}
+ 
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+ 
+input.star-5:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+ 
+input.star-1:checked ~ label.star:before { color: #F62; }
+ 
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+ 
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}

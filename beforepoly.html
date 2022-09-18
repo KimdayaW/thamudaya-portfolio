@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="'en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible content= IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./graphic/Home/avatar.webp" type="image/x-icon">
+    <title>Before Poly</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<section class="top-nav fixed-top">
+    <div>
+        <img src="./graphic/Home/avatar.webp" alt="Avatar" class="avatar">
+    </div>
+    <p>THAMU DAYA WIN</p>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+        <li> <a href="CA2.index.html" class="text-light"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="Aboutme.html" class="text-light"><i class="fas fa-theater-masks"></i>About me</a>
+        </li>
+        <li><a class="active" href="beforepoly.html" class="text-light"><i class="fas fa-lightbulb"></i>Before Poly</a>
+        </li>
+        <li> <a href="lifeatpoly.html" class="text-light"><i class="fas fa-user-graduate"></i>Life at
+                Poly</a>
+        </li>
+        <li> <a href="futcareer.html" class="text-light"><i class="fas fa-database"></i>My future </a>
+        </li>
+        <li><a href="feedback.html" class="text-light"><i class="far fa-edit"></i>Feedback</a></li>
+        <li> <input type="search" placeholder="Search.." id="linkit">
+            <a href="" id="hp" button type="submit" onclick="searchit()"><i class="fa fa-search"></i></a>
+            <div class="continer">
+                <script type="text/javascript">
+                    function searchit() {
+                        document.getElementById("hp").href = (("https://www.google.com/search?q=") + (document.getElementById("linkit").value));
+                    }
+                </script>
+        </li>
+    </ul>
+</section>
+
+
+<div class="container2">
+<!-- Describing my high school using grid -->
+    <body>
+        <h2 class="text-center p-5"
+            style="background-color:rgb(225, 132, 225); width:auto;  border:2px solid  rgb(137, 72, 137)">My Life
+            before Poly</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <a href="https://en.wikipedia.org/wiki/Basic_Education_High_School_No._1_Dagon">
+                    <img src="./graphic/Before Poly/highschool.jpg" alt="High School"
+                        style="width:350px; height:250px;margin-left:100px; " class="image">
+                </a>
+            </div>
+            <div class="col-lg-5">
+                <p class="passage" style="margin-right:50px;">
+                    My hometown is Yangon, Myanmar. I was studying at No.1, Basic Education High School Dagon from
+                    KG to
+                    Grade 11.I was graduated at 2020.
+                    During my high school years, I also participated in school events such as environmental project,
+                    language lab, performance in school concert,and sports competition such as track and field.
+                </p>
+            </div>
+        </div>
+<!-- showing the Achievements that I achieved before I leave my country -->
+<!-- also using grid to describe each article and images  -->
+        <article>
+            <h3 class="text-center p-3 "> Achievements from my High School</h3>
+            <h4>Academical Achievements</h4>
+            <div class="row p-5">
+                <div class="col">
+                    <img src="./graphic/Before Poly/high.jpg" alt="Matriculaion" style="width:200px; height:300px;">
+                </div>
+                <div class="col">
+                    <img src="./graphic/Before Poly/matriculatons.jpg" alt="HighSchool Result"
+                        style="width:200px; height:300px;">
+                </div>
+                <div class="col">
+                    <p class="passage1">There are the certificates that I have received for my matricultaion exam
+                        and
+                        recommendation letter for throughout my High School's life.</p>
+                </div>
+            </div>
+        </article>
+
+
+        <article>
+            <h4 class="text-center">Achievements related to Sports</h4>
+            <div class="row container-fluid p-5">
+                <div class="col">
+                    <p class="passage1">These are the prize that I achieved from racing competition and the finisher
+                        certificate of <strong>HERO Mindset Step Challenge</strong> which was held by Republic
+                        Polytechnic and RVI Group.</p>
+                </div>
+                <div class="col">
+                    <img src="./graphic/Before Poly/achievement1.jpg" alt="Racing Competition"
+                        style="width:200px; height:300px;">
+                </div>
+                <div class="col">
+                    <img src="./graphic/Before Poly/HERO.jpg" alt="Hero Mindset Challenge"
+                        style="width:200px; height:300px;">
+                </div>
+            </div>
+
+        </article>
+
+        <article>
+            <h4 class="text-center">Other Certificates</h4>
+            <div class="row container-fluid p-5">
+                <div class="col">
+                    <img src="./graphic/Before Poly/ielts.jpg" alt="Language Proficiency test"
+                        style="width:300px; height:250px;">
+                    <figcaption style="background-color: rgb(215, 173, 215)">IELTS Indicator Test Result
+                    </figcaption>
+                </div>
+                <div class="col">
+                    <img src="./graphic/Before Poly/rvi.jpg" alt="RVI" style="width:300px; height:250px;">
+                    <figcaption style="background-color: rgb(215, 173, 215)">Certificate of accomplishment from RVI
+                        Institute</figcaption>
+                </div>
+                <div class="col">
+                    <a href="https://www.sololearn.com/users/login?returnUrl=%2Flearning%2F1014">
+                        <img src="./graphic/Before Poly/sololearn1.png" alt="Solo Learn"
+                            style="width:300px; height:250px;">
+                    </a>
+                    <figcaption style="background-color:  rgb(215, 173, 215)">Certificate of accomplishment from
+                        solo learn </figcaption>
+                </div>
+                <p
+                    style="background-color:rgb(234, 227, 150);; width:auto;  border:2px solid rgb(137, 72, 137);border-radius:15px;">
+                    As I am an international students from Singapore Polytechnic,I have to prepare
+                    for language skills.And other qualification that would be effective to my studies in
+                    aboard.These certificates are the complement of my studies.
+                </p>
+
+            </div>
+</div>
+</article>
+
+
+</body>
+</div>
+<footer>
+    <p class="text-light">Author: Thamu Daya Win<br>
+        <i class="fas fa-user-circle"></i> <a link href="https://www.instagram.com/kharimeliaam/"
+            class="text-light">kharimeliaam</a>
+        <i class="fas fa-phone-square"></i> 86835305<br>
+        thamudaya.22@ichat.sp.edu.sg
+    </p>
+</footer>
+</body>

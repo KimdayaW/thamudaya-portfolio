@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="'en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible content= IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./graphic/Home/avatar.webp" type="image/x-icon">
+    <title>Life at Poly</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <section class="top-nav fixed-top">
+        <div>
+            <img src="./graphic/Home/avatar.webp" alt="Avatar" class="avatar">
+        </div>
+        <p>THAMU DAYA WIN</p>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li> <a href="CA2.index.html" class="text-light"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="Aboutme.html" class="text-light"><i class="fas fa-theater-masks"></i>About </a></li>
+            <li><a href="beforepoly.html" class="text-light"><i class="fas fa-lightbulb"></i>Before Poly</a>
+            </li>
+            <li> <a class="active" href="lifeatpoly.html" class="text-light"><i class="fas fa-user-graduate"></i>Life
+                    at
+                    Poly</a>
+            </li>
+            <li> <a href="futcareer.html" class="text-light"><i class="fas fa-database"></i>My future
+                </a>
+            </li>
+            <li><a href="feedback.html" class="text-light"><i class="far fa-edit"></i>Feedback</a></li>
+            <li> <input type="search" placeholder="Search.." id="linkit">
+                <a href="" id="hp" button type="submit" onclick="searchit()"><i class="fa fa-search"></i></a>
+                <div class="continer">
+                    <script type="text/javascript">
+                        function searchit() {
+                            document.getElementById("hp").href = (("https://www.google.com/search?q=") + (document.getElementById("linkit").value));
+                        }
+                    </script>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Using grid to show article about what I am Studying now in Singapore Poly -->
+    <article class="article1 p-5">
+        <h1 class="top"
+            style="background-color:rgb(225, 132, 225); width:auto;  border-radius: 20px; border:2px solid  rgb(137, 72, 137)">
+            What am I Studying?</h1>
+        <div class="row container-fluid">
+            <div class="col">
+                <p class="p"> I am currently studying in Singapore Polytechnic.<br>I am learning for Diploma in
+                    Information
+                    Technology under School of Computing(SOC).</p>
+            </div>
+            <div class="col">
+                <a href="https://www.sp.edu.sg/soc">
+                    <img src="./graphic/At SP/soc-2022-cover.jpg" alt="School of Computing"
+                        style="width:230px;height:300px " class="image">
+                </a>
+            </div>
+    </article>
+
+    <!-- Using grid to show article about joining CCA in Singapore Poly -->
+    <article class="px-5">
+        <div class="container-fluid bg-3 text-center">
+            <h2
+                style="background-color:rgb(225, 132, 225); width:auto; border-radius: 20px; border:2px solid  rgb(137, 72, 137)">
+                Why should we join CCA?</h2>
+        </div>
+        <div class="row container-fluid">
+            <div class="col-sm-3 font">
+                <a href="https://youtu.be/GT6Mopp9NBo">
+                    <img src="./graphic/At SP/CCA1.jpg" class="img-responsive image" alt="SPSM"
+                        style="width:350px; height:250px;">
+                </a>
+            </div>
+            <div class="col-lg-4 font">
+                <p class="passage1">
+                    <strong>Is it important to join a CCA</strong>?<br>
+                    CCA plays a huge part in enriching the students' lives outside classroom.
+                    Investing in CCAs is important as it can help children connect to different communities, form
+                    different
+                    groups of friends, and build relationships that go way beyond the classroom, giving them a good
+                    social
+                    circle, while keeping them mentally and emotionally healthy.
+                </p>
+            </div>
+            <div class="col">
+                <a href="https://life.sp.edu.sg/our-ccas/">
+                    <img src="./graphic/At SP/CCA.png" class="img-responsive image" alt="SPSM"
+                        style="width:350px; height:250px;">
+                    <figcaption class="link-dark">Click and learn more about CCA in SP</figcaption>
+                </a>
+
+            </div>
+
+        </div>
+    </article>
+
+    <!-- Using grid to show article about CCA that I am joining and explaination for each of the CCA -->
+    <!-- images and articles from SP official page  -->
+    <article class="px-5">
+        <div class="container-fluid bg-3 text-center">
+            <h2
+                style="background-color:rgb(225, 132, 225); width:auto; border-radius: 20px; border:2px solid  rgb(137, 72, 137)">
+                MY CCA</h2>
+        </div>
+        <div class="row container-fluid">
+            <div class="col-sm-3 font">
+                <a href="https://www.instagram.com/spskateclub/">
+                    <img src="./graphic/At SP/sp-lifesavers.jpg" alt="SPSkate" class="img-responsive image"
+                        style="width:200px; height:200px;">
+                </a>
+                <h5>Life Saver</h5>
+            </div>
+            <div class="col-lg-3 font">
+                <p
+                    style="background-color:rgb(234, 227, 150); width:auto;height:200px; border-radius: 20px; border:2px solid  rgb(137, 72, 137)">
+                    <strong>SP Lifesaving club(SPLS)</strong><br>
+                    Lifesaving is not a sport nor a recreational activity. It is a lifelong skill that is rewarding and
+                    necessary. We teach the life skills that arm you with the training and knowledge to save a life in a
+                    crisis situation. We are a team whose focus is not on trophies and medals but on human relations and
+                    life.
+                </p>
+            </div>
+
+
+            <div class="col-sm-3 font">
+                <a href="https://www.instagram.com/sp_stagemanagement/">
+                    <img src="./graphic/At SP/SPvc.png" class="img-responsive image" alt="SPVC"
+                        style="width:200px; height:200px;">
+                </a>
+                <h5>Videography Club</h5>
+            </div>
+            <div class="col-lg-3 font">
+                <p
+                    style="background-color:rgb(234, 227, 150); width:auto; height:200px; border-radius: 20px; border:2px solid  rgb(137, 72, 137)">
+                    <strong>SP Videography Club(SPVC) </strong><br>
+                    Interested in making videos, telling stories or picking up a new skill? Video Graphy Club wants you
+                    to join us in making some classic movie magic.The Club have a lot of competitions and challenging
+                    events welcoming for all the group members .
+                </p>
+            </div>
+        </div>
+
+        <div class="row container-fluid">
+            <div class="col-sm-3 font">
+                <a href="https://www.instagram.com/sp.vc/">
+                    <img src="./graphic/At SP/SPSM.png" class="img-responsive image" alt="SPSM"
+                        style="width:200px; height:200px;">
+                </a>
+                <h5>Stage Management</h5>
+            </div>
+            <div class="col-lg-3 font">
+                <p
+                    style="background-color:rgb(234, 227, 150); width:auto; height:200px; border-radius: 20px; border:2px solid  rgb(137, 72, 137)">
+                    <strong>SP Stage Management(SPSM)</strong><br>
+                    SP Stage Management is a dedicated and passionate crew specialising in providing sound and lights
+                    for events. The club aims to
+                    expand the knowledge of each member through trainings in sound engineering and technical light play.
+
+                </p>
+            </div>
+
+            <div class="col-sm-3 font">
+                <a href="https://www.instagram.com/spinfocomm/">
+                    <img src="./graphic/At SP/SpIC.png" class="img-responsive image" alt="SPVC"
+                        style="width:200px;height:200px;">
+                </a>
+                <h5>Infocomm Club</h5>
+            </div>
+            <div class="col-lg-3 font">
+                <p
+                    style="background-color:rgb(234, 227, 150); width:auto;height: 200px; border-radius: 20px; border:2px solid  rgb(137, 72, 137)">
+                    <strong> SP Infocomm (SPIC)</strong><br>
+                    Interested in coding, programming and everything related to the fascinating world of bits and bytes?
+                    SP Infocomm (SPIC) is for you! Covering an exciting range of activities such as online competitions,
+                    group bonding events, and coding workshops, we've got it all!
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <!-- Representing the course offered by using bootstrap template -->
+    <article2 class="px3 ">
+        <div class="container-fluid bg-3 text-center">
+            <h4>Course offered by Singapore Polytechnic</h4>
+            <h5>(School of Computing)</h5>
+        </div>
+        <p
+            style="background-color:rgb(234, 227, 150); width:auto; border-radius: 20px; border:2px solid  rgb(137, 72, 137)">
+            The School of Computing offers 4 differentv courses which are Diploma in information-technology(DIT -
+            S69),Diploma in Applied AI and Analytics (DAAA - S30),Diploma in Infocomm Security Management (DISM - S54)
+            and Common ICT Programme (DCITP - S32) where you can choose your favorite course after the first
+            semester.For more deatails. you can refer to the links that are shown below.</p>
+        <div class="row container-fluid">
+            <div class="col-md-3 font">
+                <a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/common-ict-programme/overview">
+                    <img src="./graphic/At SP/dcitp.jpg" class="img-responsive image" style="width:100%" alt="Image">
+                </a>
+                <h5>Common ICT Programme (DCITP - S32)</h5>
+            </div>
+
+            <div class="col-md-3 font ">
+                <a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/information-technology">
+                    <img class="image__img image" src="./graphic/At SP/dit.jpg" class="img-responsive"
+                        style="width: 100%;" alt="Image">
+                </a>
+                <h5> Diploma in Information Technology (DIT - S69)</h5>
+            </div>
+
+            <div class="col-md-3 font">
+                <a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/applied-AI-and-analytics/overview">
+                    <img src="./graphic/At SP/daaa.jpg" class="img-responsive image" style="width:100%" alt="Image">
+                </a>
+                <h5> Diploma in Applied AI and Analytics (DAAA - S30)</h5>
+            </div>
+
+            <div class="col-md-3 font">
+                <a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/infocomm-security-management/overview">
+                    <img src="./graphic/At SP/dism.jpg" class="img-responsive image" style="width:100%" alt="Image">
+                </a>
+                <h5>Diploma in Infocomm Security Management (DISM - S54)</h5>
+
+            </div>
+    </article2>
+    <p class="text-center">
+        <strong>Click Pictures to find out more</strong>
+    </p>
+    <br>
+    <br>
+    <!-- linking youtube video to my website by using bootstrap -->
+    <article3>
+        <h2 class="text-center">School of Computing (SOC)</h2>
+        <div class="embed-responsive ratio ratio-16x9 center embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YoRB8mcni0I"></iframe>
+        </div>
+
+        </div>
+    </article3>
+</body>
+<footer>
+    <p class="text-light">Author: Thamu Daya Win<br>
+        <i class="fas fa-user-circle"></i> <a link href="https://www.instagram.com/kharimeliaam/"
+            class="text-light">kharimeliaam</a>
+        <i class="fas fa-phone-square"></i> 86835305<br>
+        thamudaya.22@ichat.sp.edu.sg
+    </p>
+</footer>
+
+</html>

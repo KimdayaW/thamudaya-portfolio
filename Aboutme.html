@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="'en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible content= IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./graphic/Home/avatar.webp" type="image/x-icon">
+    <title>About me</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="continer">
+
+        <!-- making humbuger nav bar depending on  the viewport  -->
+        <section class="top-nav fixed-top">
+            <div>
+                <img src="./graphic/Home/avatar.webp" alt="Avatar" class="avatar">
+            </div>
+            <p>THAMU DAYA WIN</p>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li> <a href="CA2.index.html" class="text-light"><i class="fa fa-home"></i>Home</a></li>
+                <li><a class="active" href="Aboutme.html" class="text-light"><i class="fas fa-theater-masks"></i>About
+                    </a></li>
+                <li><a href="beforepoly.html" class="text-light"><i class="fas fa-lightbulb"></i>Before Poly</a>
+                </li>
+                <li> <a href="lifeatpoly.html" class="text-light"><i class="fas fa-user-graduate"></i> Life at
+                        Poly</a>
+                </li>
+                <li> <a href="futcareer.html" class="text-light"><i class="fas fa-database"></i>My future</a>
+                </li>
+                <li><a href="feedback.html" class="text-light"><i class="far fa-edit"></i>Feedback</a></li>
+                <li> <input type="search" placeholder="Search.." id="linkit">
+                    <a href="" id="hp" button type="submit" onclick="searchit()"><i class="fa fa-search"></i></a>
+                    <div class="continer">
+                        <script type="text/javascript">
+                            function searchit() {
+                                document.getElementById("hp").href = (("https://www.google.com/search?q=") + (document.getElementById("linkit").value));
+                            }
+                        </script>
+                </li>
+            </ul>
+        </section>
+
+
+        <div class=" mx-5">
+            <img src="./graphic/About me/mypic.jpg" class="mt-4 p-5" style=" width: 500px; height:400px">
+        </div>
+
+
+
+        <!-- Creating a table showing some facts about me -->
+        <div class="container-fluid bg-2 text-center">
+            <h3 class="text-light">Some facts about me</h3>
+            <table class="table table-bordered container-fluid text-light">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <td>THAMU DAYA WIN</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">School</th>
+                        <td>Singapore Polytechnic</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Course Enrolled</th>
+                        <td>Diploma in Information Technology</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Admission Number</th>
+                        <td>2235019</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Date of Birth</th>
+                        <td>5th March 2004</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Social Media</th>
+                        <td><a link href="https://www.instagram.com/kharimeliaam/" class="link-light">kharimeliaam</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Contact Number</th>
+                        <td>86835305</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <!-- describing my interests by using grid -->
+        <div class="container ">
+            <h2 class="pt-4 " style="text-align: center;   background-color: rgb(225, 132, 225);
+                width:auto; border-radius: 20px;">My Interests</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="img-rounded" src="./graphic/About me/coding.webp" alt="coding"
+                        style="width:300px; height:200px">
+                    <div class="caption">
+                        <figcaption >Coding</figcaption>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-rounded" src="./graphic/About me/design.jpg" alt="Designing"
+                        style="width:300px; height:200px">
+                    <div class="caption">
+                        <figcaption >Designing</figcaption>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-rounded" src="./graphic/About me/gaming.jpg" alt="Game"
+                        style="width:300px; height:200px">
+                    <div class="caption">
+                        <figcaption >Gaming</figcaption>
+                    </div>
+                </div>
+                <p
+                    style="background-color:rgb(234, 227, 150); width:auto; border-radius: 20px; border:2px solid  rgb(137, 72, 137)">
+                    Most of my interests are related to IT fields such as coding, designing and making logos and layouts
+                    and gaming.I love things which is hard to get and challenging.Although programming is not quite easy
+                    for me , I
+                    tried my best to solve these challenges.
+                </p>
+
+
+                <!-- using grid to show My hobbies -->
+
+                <h2 class="text-center" style="background-color:rgb(225, 132, 225); border-radius: 20px;">My
+                    Hobbies</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img class="img-rounded" src=" ./graphic/About me/swimming.jpeg" alt="swimming"
+                            style="width:300px; height:200px">
+                        <div class="caption">
+                            <figcaption>Swimming</figcaption>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="img-rounded" src="./graphic/About me/skate.jpg" alt="skating"
+                            style="width:300px; height:200px">
+                        <div class="caption">
+                            <figcaption>Skating</figcaption>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="img-rounded" src="./graphic/About me/hiking.jfif" alt="Hiking and travelling"
+                            style="width:300px; height:200px">
+                        <div class="caption">
+                            <figcaption >Hiking and travelling</figcaption>
+                        </div>
+                    </div>
+                    <p
+                        style="background-color:rgb(234, 227, 150); width:auto; border-radius: 20px; border:2px solid  rgb(137, 72, 137)">
+                        My hobbies are mostly based on physical activites and Sports such as swimming, skating and
+                        hiking.I
+                        am keen on doing such kind of activites since I am programmer and have to sit in front of the
+                        screen
+                        for very long, these activites make me feel relax and help me find my freedom and peace.
+                    </p>
+                </div>
+
+                <!-- describing my values with filp card  -->
+                <div class="container ">
+                    <h2 class="pt-3" style="text-align: center;   background-color:rgb(225, 132, 225);
+                    width:auto; border-radius: 20px;">My Values</h2>
+                    <div class="row container-fluid">
+                        <div class="col-lg-4">
+                            <div class="flip-box">
+                                <div class="flip-box-inner">
+                                    <div class="flip-box-front">
+                                        <img src="./graphic/About me/value.jpeg" alt="Trustworthy"
+                                            style="width:100% ;height:200px">
+                                    </div>
+                                    <div class="flip-box-back">
+                                        <h2>Trustworthy</h2>
+                                        <p>Trustworthy person is someone who can be entrusted with
+                                            your secrets or with anything else of importance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="flip-box">
+                                <div class="flip-box-inner">
+                                    <div class="flip-box-front">
+                                        <img src="./graphic/About me/value.jpeg" alt="Energetic"
+                                            style="width:100% ;height:200px;">
+                                    </div>
+                                    <div class="flip-box-back">
+                                        <h2>Energetic</h2>
+                                        <p>An energetic person is very active and does not feel at all tired. .</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="flip-box">
+                                <div class="flip-box-inner">
+                                    <div class="flip-box-front">
+                                        <img src="./graphic/About me/value.jpeg" alt="Resilience"
+                                            style="width:100% ;height:200px">
+                                    </div>
+                                    <div class="flip-box-back">
+                                        <h2>Resilience</h2>
+                                        <p>Resilience is the process and outcome of successfully adapting to difficult
+                                            or
+                                            challenging life experiences.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- article explaining my values -->
+                        <p
+                            style="background-color:rgb(234, 227, 150); width:auto; border-radius: 20px; border:2px solid  rgb(137, 72, 137)">
+                            <strong>Values that make me Unique</strong> <br>
+                            I may have more strength than I have shown above.But these are the obvious strength that
+                            other
+                            people
+                            and I have noticed for myself.<br><br>I can say I am a <strong>trustworthy</strong> person
+                            because I am a person who is reliable, responsible, and can be trusted completely and can be
+                            trusted with their secrets and something that is important.<br><br>Another strength of me is
+                            I
+                            am
+                            <strong>energetic and optimistic</strong> at almost every time.I never get tired of doing my
+                            favorite things and
+                            also the things I don't mind to do.Whatever I do,I try my best to complete the tasks what I
+                            have
+                            to do without feeling upset.<br><br>My last strong point is that I am a
+                            <strong>resilient</strong> person that I never give up on what I am doing on it even though
+                            I
+                            have encountered a ton of difficulties.For example,Even though, I have faced a lot of
+                            difficulties in
+                            studying aboard , being far apart for my family ,language problems and encountered some
+                            struggle
+                            moments in my studies,I still keep on trying with my best for the things to become better
+                            without giving up on them.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<!-- footer -->
+<footer>
+    <p class="text-light">Author: Thamu Daya Win<br>
+        <i class="fas fa-user-circle"></i> <a link href="https://www.instagram.com/kharimeliaam/"
+            class="text-light">kharimeliaam</a>
+        <i class="fas fa-phone-square"></i> 86835305<br>
+        thamudaya.22@ichat.sp.edu.sg
+    </p>
+</footer>
